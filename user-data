@@ -1,0 +1,14 @@
+If you'd like to install Jenkins via the user-data section of Advanced Options of instance deployment, here is a script that will work.
+
+#!/bin/bash
+sudo apt update  && sudo apt upgrade -y
+
+# Install jre 
+sudo apt install default-jre -y
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+
+sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update && sudo apt install jenkins -y
+
+# start and enable jenkins service
+sudo systemctl enable --now jenkins
