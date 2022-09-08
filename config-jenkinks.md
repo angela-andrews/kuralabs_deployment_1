@@ -72,6 +72,9 @@ From the Jenkins Dashboard, click on New item.
     - In the credentials dropdown, select your credentials.
     - Copy the HTTPS url from your repo & paste it under repository HTTPS url
     - Click save
+    
+![Credentials and GitHub URL](/images/select-creds.png)
+
 - Review the activity and the scan repository logs
 - Review the pipeline, hopefully both branches are sunny. If not, troubleshoot to figure out why. Once you've figured it out, scan the repository.
 - Next, make a change to the commands in the Jenkinsfile in Github. In Jenkins, click Scan Repository Now. Watch the progress. Watch for a succssful build.
@@ -81,8 +84,11 @@ From the Jenkins Dashboard, click on New item.
         - Enter the branch name (main)
         - Exclude b* (in my case, I'm excluding any branch that begins with b)
         - Click Save.
-    - Review the Scan Repository Logs
-    - Review the project dashboard  and you'll see your branch2 was removed & the scan of the repo succeeded.
+
+![Filter](/images/filter.png)    
+   
+- Review the Scan Repository Logs
+- Review the project dashboard  and you'll see your branch2 was removed & the scan of the repo succeeded.
 
 ## Setting up GitHub WebHooks
 
@@ -92,5 +98,7 @@ From GitHub, go to the repo settings, webhooks > add webhook
 - Select the "send my everything" radio button
 - Click Add Webhook
 - In a few moments, you should have a green checkmark next to your URL
+
+![Webhook Successful](/images/webhook-ok.png)
 
 Make a change in your code to see the webhook in action. Go back to Jenkins to confirm the build ran automatially via the webhook.
