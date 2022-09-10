@@ -16,3 +16,4 @@ CI/CD pipeline deployment 1
 - [Jenkins Server Install script](https://github.com/angela-andrews/kuralabs_deployment_1/blob/main/deploy1-install.sh)
 - [User-Data for EC2 instance](https://github.com/angela-andrews/kuralabs_deployment_1/blob/main/user-data)
 - [Configuring Jenkins Build with GitHub Webhooks](https://github.com/angela-andrews/kuralabs_deployment_1/blob/main/config-jenkinks.md)
+- [Configuring Instance to run url-shortener Flask app](https://github.com/angela-andrews/kuralabs_deployment_1/blob/main/url-shortner.md)
