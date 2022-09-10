@@ -9,7 +9,7 @@ On your Flask server, copy over the zip file that contains the flask app (It isn
 
 ` scp -i "yourpem.pem" files.zip ubuntu@<yourIP>:`
 
-` scp -i "yourpem.pem" [url-shortener-install.sh](https://github.com/angela-andrews/kuralabs_deployment_1/blob/main/url-shortener-install.sh) ubuntu@<yourIP>: `
+` scp -i "yourpem.pem" url-shortener-install.sh ubuntu@<yourIP>: `
 
 Make the script executable
 
