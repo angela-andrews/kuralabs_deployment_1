@@ -5,7 +5,7 @@ Create 2 new Ubuntu 22.04 LTS instance as a t2micro. Create a security group tha
 
 ## Installing the Flask App
 
-On your Flask server, copy over the zip file that contains the flask app (It isn't on github, the instructor provides a google drive link). Rename the zip file to files.zip. Run the script from the same directory your zip file is located. The script assumes you're using the Ubuntu user that comes as the default user.
+On your Flask server, copy over the zip file that contains the flask app (It isn't on github, the instructor provides a google drive link). Rename the zip file to files.zip. Run the [script](https://github.com/angela-andrews/kuralabs_deployment_1/blob/main/url-shortener-install.sh) from the same directory your zip file is located. The script assumes you're using the Ubuntu user that comes as the default user.
 
 ` scp -i "yourpem.pem" files.zip ubuntu@<yourIP>:`
 
