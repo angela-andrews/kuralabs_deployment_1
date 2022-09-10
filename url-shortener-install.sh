@@ -1,16 +1,19 @@
 #!/bin/bash
 
 ########################################################################
-# Installing pip and flask app dependencies
-# make sure your version of python matches the version on the sed line below
-# Also, be sure you zip file is called files.zip and is in the root
-# of  your home directory. the script will unzip fron the pwd and cd you
+# Installing pip and flask app dependencies on a new Ubuntu 22.04 instance
+# Steps to prepare the system for the script:
+# 1) Make sure your version of python matches the version on the sed line below
+# 2) Also, be sure your zip file is called files.zip and is in the root
+# of  your home directory. the script will unzip from the pwd and cd you
 # into the url-shortner directory
+# 3)Set the path before running the script, exit the shell and come back in 
+# before you run the script
 #
 # Run this command using source ./url-shortener-install.sh
 #
 # Date: 9/8/2022
-# version: 1.0
+# version: 1.2
 #######################################################################
 
 
